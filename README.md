@@ -53,7 +53,7 @@ Com isso, os serviços essenciais para o funcionamento do projeto estarão em ex
     ```bash
     npm run start
     ```
-4.  A aplicação estará disponível em [http://localhost:4200](http://localhost:420)    
+4.  A aplicação estará disponível em [http://localhost:80](http://localhost:80)    
 
 
 ### Visualizando dados do Kafka
@@ -69,7 +69,7 @@ Para visualizar os dados no tópico do Kafka, você pode entrar no terminal do c
 2.  Entre no terminal do container Kafka:
 
     ```bash
-    docker exec -it kafka-creditos /bin/bash
+    docker exec -it kafka /bin/bash
     ```
 
 3.  Liste todos os tópicos disponíveis:

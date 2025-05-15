@@ -30,37 +30,20 @@
     Este comando irá construir as imagens Docker necessárias e iniciar os seguintes serviços:
 
     * Banco de dados (PostgreSQL)
-    * Kafka
+    * Kafka (mensageria)
     * Backend (API)
+    * Frontend
 
-Com isso, os serviços essenciais para o funcionamento do projeto estarão em execução.
+### Frontend
 
-### Configuração do Frontend
-
-1.  Navegue até o diretório `front`:
-
-    ```bash
-    cd front
-    ```
-
-2.  Execute o seguinte comando para instalar as dependências do frontend:
-
-    ```bash
-    npm run ci
-    ```
-
-3. Execute o seguinte comando para iniciar o frontend:
-    ```bash
-    npm run start
-    ```
-4.  A aplicação estará disponível em [http://localhost:80](http://localhost:80)    
+1.  A aplicação estará disponível em [http://localhost:80](http://localhost:80)    
 
 
 ### Visualizando dados do Kafka
 
-Para visualizar os dados no tópico do Kafka, você pode entrar no terminal do container Kafka e usar o console consumer.
+Para visualizar os dados de tópico do Kafka, você pode entrar no terminal do container e usar o console consumer.
 
-1.  Liste os containers em execução para encontrar o nome do container Kafka (geralmente algo como `kafka_1`):
+1.  Execute o comando para encontrar o nome do container Kafka (geralmente algo como `kafka_credito`):
 
     ```bash
     docker ps
